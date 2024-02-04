@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Proposal</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #fce4ec; /* Misty Pink background color */
+    }
+
+    h1 {
+      color: #ff1493; /* DeepPink color for a Valentine's Day vibe */
+    }
+
+    #hearts {
+      font-size: 36px;
+      color: #ff1493;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff1493;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shanelle, will you be my Valentine?</h1>
+
+  <div id="hearts">&#10084;&#10084;&#10084;</div>
+
+  <audio controls autoplay>
+    <source src="your_love_song.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <button onclick="answer('yes')">Yes</button>
+  <button onclick="answer('no')" disabled>No</button>
+
+  <script>
+    function answer(response) {
+      alert('You chose: ' + response);
+    }
+  </script>
+</body>
+</html>
